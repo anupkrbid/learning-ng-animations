@@ -1,1 +1,10 @@
-<div [@clickedState]="clickInfo" (click)="onClickSimple()"></div>
+<div [@clickedState]="clickInfo"
+     (click)="onClickSimple()"
+     (mousedown)="clickInfo = 'mousedown'"
+></div>
+
+<hr/>
+
+<input type="number" (input)="numberEntered = $event.target.value">
+<br/><br/>
+<span *ngFor="let number of arrayOfNumbers;" [@numberEnteredState]="numberEntered == number ? 'selected' : 'unselected'">{{ number }}</span>

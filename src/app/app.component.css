@@ -1,5 +1,4 @@
-#simple {
-    width: 100px;
-    height: 100px;
-    background-color: orange;
+span {
+    margin-left: 1px;
+    margin-right: 1px;
 }
